@@ -13,7 +13,7 @@ describe("Cafeteria Contract", function () {
         mockERC20 = await Drex.deploy();
 
         // Deploy Cafeteria contract
-        Cafeteria = await ethers.getContractFactory("Cafeteria");
+        Cafeteria = await ethers.getContractFactory("CoffeeShop");
         cafeteria = await Cafeteria.deploy();
 
         // Mint some tokens for testing

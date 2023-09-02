@@ -1,4 +1,3 @@
-// test/Barbearia.js
 const { expect } = require("chai");
 
 describe("Barbearia Contract", function () {
@@ -12,7 +11,7 @@ describe("Barbearia Contract", function () {
         const MockERC20 = await ethers.getContractFactory("DREX");
         mockERC20 = await MockERC20.deploy();
 
-        Barbearia = await ethers.getContractFactory("Barbearia");
+        Barbearia = await ethers.getContractFactory("Barbershop");
         barbearia = await Barbearia.deploy();
 
         await mockERC20.mint(owner.address, 5000);

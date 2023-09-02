@@ -1,13 +1,12 @@
-// test/ViagemUruguai.js
 const { expect } = require("chai");
 
-describe("ViagemAoUruguai Contract", function () {
+describe("Flight Ticket Contract", function () {
     let ViagemAoUruguai, viagem;
     let owner, account1, account2;
 
     beforeEach(async () => {
         [owner, account1, account2] = await ethers.getSigners();
-        ViagemAoUruguai = await ethers.getContractFactory("ViagemAoUruguai");
+        ViagemAoUruguai = await ethers.getContractFactory("FlightTicket");
         viagem = await ViagemAoUruguai.deploy();
     });
 

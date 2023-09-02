@@ -11,7 +11,7 @@ describe("Restaurante Contract", function () {
         const MockERC20 = await ethers.getContractFactory("DREX");
         mockERC20 = await MockERC20.deploy();
 
-        Restaurante = await ethers.getContractFactory("Restaurante");
+        Restaurante = await ethers.getContractFactory("Restaurant");
         restaurante = await Restaurante.deploy();
 
         await mockERC20.mint(owner.address, 5000);
